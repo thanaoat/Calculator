@@ -165,6 +165,16 @@
         app:layout_constraintStart_toEndOf="@+id/buttonDivide" />
 
     <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dip"
+        android:text="C"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonMultiply"
+        app:layout_constraintStart_toStartOf="@+id/buttonNeg" />
+
+    <Button
         android:id="@+id/buttonMultiply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

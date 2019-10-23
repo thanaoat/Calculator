@@ -70,6 +70,14 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+        buttonClear.setOnClickListener { view ->
+            operand1 = null
+            pendingOperation = "="
+            result.setText(operand1)
+            newNumber.setText("")
+            operation.text = pendingOperation
+        }
     }
 
     private fun performOperation(value: Double, operation: String) {
